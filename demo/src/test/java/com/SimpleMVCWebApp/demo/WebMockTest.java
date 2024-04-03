@@ -28,6 +28,6 @@ class WebMockTest {
         when(controller.doubleNumber(20)).thenReturn(40.0);
         this.mockMvc.perform(get("/double?number=20")).andDo(print()).andExpect(status().isOk())
                 .andExpect(content().string(containsString("40.0")));
-        //testing Simpley YAML Update
+        //testing Simpley YAML Update1
     }
 }
